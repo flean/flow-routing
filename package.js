@@ -7,10 +7,10 @@
 'use strict';
 
 Package.describe({
-  name: 'useraccounts:flow-routing',
-  summary: 'UserAccounts package providing routes configuration capability via kadira:flow-router.',
+  name: 'flean:flow-routing',
+  summary: 'UserAccounts package providing routes configuration capability via ostrio:flow-router-extra.',
   version: '1.14.2',
-  git: 'https://github.com/meteor-useraccounts/flow-routing.git',
+  git: 'https://github.com/flean/flow-routing',
 });
 
 Package.onUse(function(api) {
@@ -18,14 +18,14 @@ Package.onUse(function(api) {
 
   api.use([
     'check',
-    'kadira:flow-router',
+    'ostrio:flow-router-extra',
     'underscore',
     'useraccounts:core',
     'modules'
   ], ['client', 'server']);
 
   api.imply([
-    'kadira:flow-router@2.10.1',
+    'ostrio:flow-router-extra',
     'useraccounts:core@1.14.2',
   ], ['client', 'server']);
 
