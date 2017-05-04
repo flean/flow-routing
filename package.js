@@ -9,7 +9,7 @@
 Package.describe({
   name: 'flean:flow-routing',
   summary: 'UserAccounts package providing routes configuration capability via ostrio:flow-router-extra.',
-  version: '1.14.2',
+  version: '1.14.3',
   git: 'https://github.com/flean/flow-routing',
 });
 
