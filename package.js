@@ -27,6 +27,7 @@ Package.onUse(function(api) {
   api.imply([
     'ostrio:flow-router-extra@3.1.0',
     'useraccounts:core@1.14.2',
+    'modules@0.8.2',
   ], ['client', 'server']);
 
   api.use([
