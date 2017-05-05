@@ -9,7 +9,7 @@
 Package.describe({
   name: 'flean:flow-routing',
   summary: 'UserAccounts package providing routes configuration capability via ostrio:flow-router-extra.',
-  version: '1.14.5',
+  version: '1.14.6',
   git: 'https://github.com/flean/flow-routing',
 });
 
@@ -18,14 +18,14 @@ Package.onUse(function(api) {
 
   api.use([
     'check',
-    'ostrio:flow-router-extra',
+    'kadira:flow-router',
     'underscore',
     'useraccounts:core',
     'modules'
   ], ['client', 'server']);
 
   api.imply([
-    'ostrio:flow-router-extra@3.1.0',
+    'kadira:flow-router@2.10.1',
     'useraccounts:core@1.14.2',
     'modules@0.8.2',
   ], ['client', 'server']);
